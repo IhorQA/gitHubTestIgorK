@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "htmttp://testing.org/testng-10.dtd" >
+
+<suite name="MyFirstSuite" verbose="1">
+
+    <test name="FirstTest" >
+        <classes>
+            <class name="TestRunner">
+                <methods>
+                    <include name="ThisIsMethod_1" />
+                    <include name="ThisIsMethod_2" />
+                    <exclude name="ThisIsMethod_3" /> //исключаем
+                </methods>
+
+            </class>
+        </classes>
+</suite>>
