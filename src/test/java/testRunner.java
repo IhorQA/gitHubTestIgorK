@@ -9,6 +9,11 @@ public class testRunner {
         System.out.println("This Is OUR TEST CASE (Before Test)");
     }
 
+    @AfterTest
+    public void ThisIsAftertest(){
+        System.out.println("This Is After test (After)");
+    }
+
     @BeforeMethod
     public void ThisBeforeTestMethod(){
         System.out.println("This Before Test Method");
