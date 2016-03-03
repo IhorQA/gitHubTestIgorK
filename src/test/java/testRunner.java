@@ -1,12 +1,19 @@
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * Created by Igor K on 03.03.2016.
  */
 public class testRunner {
+    @BeforeTest
+    public void ThisIsBeforeTest(){
+        System.out.println("This Is OUR TEST CASE (Before Test)");
+    }
+
+    @AfterTest
+    public void ThisIsAftertest(){
+        System.out.println("This Is After test (After)");
+    }
+
     @BeforeMethod
     public void ThisBeforeTestMethod(){
         System.out.println("This Before Test Method");
